@@ -39,7 +39,7 @@ temp = [os.path.splitext(sourcePath + file) for file in onlyfiles]
 extensionList = [x[1] for x in temp]
 uniqueExtensionList = list(set(extensionList))
 
-ignoreExtensionList = ['.lnk']
+ignoreExtensionList = ['.lnk', '.LNK']
 
 for currIgnore in ignoreExtensionList :
 	if currIgnore in uniqueExtensionList :
